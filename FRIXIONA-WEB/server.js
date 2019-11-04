@@ -10,6 +10,18 @@ app.set('view engine','hbs');
 app.get('/', (req, res) => {
     res.render('inicio');
 });
+app.get('/muro', (req, res) => {
+    res.render('muro');
+});
+app.get('/costos', (req, res) => {
+    res.render('costos');
+});
+app.get('/salidas', (req, res) => {
+    res.render('salidas');
+});
+app.get('/registro', (req, res) => {
+    res.render('registro');
+});
 
 app.listen(port, () => {
     console.log(`Escuchando peticiones en el puerto ${port}`);
